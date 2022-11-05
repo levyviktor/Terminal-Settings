@@ -1,0 +1,73 @@
+# Terminal-Settings
+
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "background": "transparent",
+          "foreground": "#0efb79",
+          "template": "\u279c "
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#f943ce",
+          "properties": {
+            "style": "folder"
+          },
+          "template": "<b>{{ .Path }}</b> <#0efb79>\u26a1</>"
+        },
+        {
+          "foreground": "#ffd504",
+          "properties": {
+            "branch_icon": "\ue0a0 "
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "type": "git"
+        },
+        {
+          "foreground": "#5EADF2",
+          "style": "plain",
+          "template": "{{if .Version}}<#F3EFF5>is</> \uf487 {{.Version}} {{end}}",
+          "type": "project"
+        },
+        {
+          "foreground": "#44FFD2",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "plain",
+          "template": "<#ffffff>via</> \ue781 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "type": "node"
+        },
+        {
+          "foreground": "#FE4A49",
+          "style": "plain",
+          "template": "<#F3EFF5>and</> \ue71e {{.Full}} ",
+          "type": "npm"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#05f4cc",
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
