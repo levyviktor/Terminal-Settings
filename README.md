@@ -1,5 +1,8 @@
 # Terminal-Settings
 
+# Installation
+https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal
+
 # Oh My Posh
 1- https://ohmyposh.dev/
 
