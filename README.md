@@ -1,4 +1,4 @@
-# Terminal-Settings
+                                                           # Terminal-Settings
 
 # Installation
 https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal
